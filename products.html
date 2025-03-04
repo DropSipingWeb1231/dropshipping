@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דף הבית - חיפוש מוצרים</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        a:hover {
+            color: black;
+        }
+        
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        
+        header a {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            margin-right: 30px;
+        }
+        
+        header form {
+            margin-top: 10px;
+        }
+        
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        
+        .search-container input[type="text"] {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            width: 300px;
+            background-color: #444;
+            color: white;
+        }
+        
+        .search-container input[type="submit"] {
+            padding: 12px 20px;
+            background-color: #777;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-left: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .search-container input[type="submit"]:hover {
+            background-color: #666;
+        }
+        
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+        
+        .product {
+            background-color: #444;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        
+        .product h3 {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        
+        .product p {
+            font-size: 16px;
+            color: #bbb;
+        }
+        
+        .content {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .content h2 {
+            font-size: 28px;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+        
+        .content p {
+            font-size: 18px;
+            color: #bbb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="home.html">Home</a>
+    </header>
+
+    <div class="search-container">
+        <form action="#" method="get">
+            <input type="text" name="search" placeholder="search products" required>
+            <input type="submit" value="חפש">
+        </form>
+    </div>
+
+    <div class="products">
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5a405c21c45e48299e80fa82fff25987G.jpeg_220x220q75.jpeg_.avif">
+            <a href="https://he.aliexpress.com/item/1005007343958003.html?spm=a2g0o.productlist.main.4.44dby7mYy7mYhJ&pdp_ext_f=%7B%22sku_id%22%3A%2212000040349226780%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3Acategory_navigate">Portable Fascia Fistula <del>₪164.68</del> ₪16.62</a>
+            <p>Portable Fascia Fistula with Vibration for Massage for Body, Neck, Back, Deep Muscles, Relaxation, Fitness, Slimming, One Head</p>
+        </div>
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sc6c2263be6704e72ac3cff809f26e745y.jpg_220x220q75.jpg_.avif">
+            <a href="https://he.aliexpress.com/item/1005006645520964.html?spm=a2g0o.productlist.main.21.6f22674402OZd8&pdp_ext_f=%7B%22sku_id%22%3A%2212000037912597407%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3Acategory_navigate">Warm and soft cat pet mattress <del>₪101.27</del> ₪3.65</a>
+            <p>Warm and soft pet mattress cat bed with cover, round cat bed for small dogs and cats</p>
+        </div>
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5dce83a26baa4e668718017ba40f646ed.jpg_220x220q75.jpg_.avif">
+            <a href="https://he.aliexpress.com/item/1005007643959756.html?spm=a2g0o.productlist.main.3.7e6bgZJVgZJVh6&pdp_ext_f=%7B%22sku_id%22%3A%2212000041631296379%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3Acategory_navigate">Interactive Ball Toys for Cats <del>₪9.80</del> ₪3.65</a>
+            <p>Interactive Cat Ball Toy, Automatic Wheel Ball with Tail, Rechargeable Smart Interactive Pet Toy, Smart Mouse for Cat</p>
+        </div>
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S04db33dc29bf4375bc36f69dbddbbb3bE.jpg_220x220q75.jpg_.avif">
+            <a href="https://he.aliexpress.com/item/1005007254996218.html?spm=a2g0o.productlist.main.4.5cef9000Ez9vKP&pdp_ext_f=%7B%22sku_id%22%3A%2212000039961856308%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3Acategory_navigate">Smart LED Bulbs Tuya Smart WiFi <del>₪42.67</del> ₪3.65</a>
+            <p>Smart LED Bulbs Tuya Smart WiFi 220V 110V 10W 15W 20W E27 Alexa LED Lamp RGB Smart Life APP Google Assisatnt Voice Control</p>
+        </div>
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S9631901e278646e09501ab7395b0293dN.jpg_220x220q75.jpg_.avif">
+            <a href="https://he.aliexpress.com/item/1005006149573018.html?spm=a2g0o.productlist.main.5.ca021fcf7d4Sy5&pdp_ext_f=%7B%22sku_id%22%3A%2212000036029321043%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3Acategory_navigate">Stainless Steel Rings for Women 2024 New Trend Gold Color <del>₪14.44</del> ₪3.65</a>
+            <p>Stainless Steel Rings for Women 2024 New Trend Gold Color Fema Ring Couple Jewelry for Wedding Free Shipping Illuminated Anillos Item</p>
+        </div>
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/Se35b0a1290094a278da6ea5652d1897cL.jpg_220x220q75.jpg_.avif">
+            <a href="https://he.aliexpress.com/item/1005004963661885.html?spm=a2g0o.productlist.main.8.ca021fcf7d4Sy5&pdp_ext_f=%7B%22sku_id%22%3A%2212000031174347263%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3Acategory_navigate">Titanium Steel Rotating Chain Ring for Women and Men <del>₪2.46</del> ₪0.62</a>
+            <p>Titanium Steel Rotating Chain Ring for Women and Men, Stress Relief Spinner Ring, Multi-purpose Chain Ring for Bottle Opener, Gift</p>
+        </div>
+    </div>
+
+    <script>
+        function searchProducts() {
+            const query = document.querySelector('input[name="search"]').value.toLowerCase();
+            const products = document.querySelectorAll('.product');
+            products.forEach(product => {
+                const title = product.querySelector('a').textContent.toLowerCase();
+                if (title.includes(query)) {
+                    product.style.display = 'block';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        }
+
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            searchProducts();
+        });
+    </script>
+
+</body>
+
+</html>
