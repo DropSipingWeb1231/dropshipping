@@ -4,67 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>דף הבית - חיפוש מוצרים</title>
+    <title>Search Products</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #333;
-            color: #fff;
+            background-color: #121212;
+            color: #ffffff;
         }
         
         a {
+            font-size: 14px;
             text-decoration: none;
-            color: inherit;
+            color: #ffffff;
+            transition: font-size 0.3s, color 0.3s;
         }
         
         a:hover {
-            color: black;
+            color: #aaaaaa;
         }
         
         header {
-            background-color: #222;
+            background-color: #1e1e1e;
             color: white;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            border-bottom: 2px solid #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
         }
         
         header a {
             font-size: 24px;
             font-weight: bold;
             color: white;
-            margin-right: 30px;
-        }
-        
-        header form {
-            margin-top: 10px;
         }
         
         .search-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: 20px;
+            margin-top: 80px;
         }
         
         .search-container input[type="text"] {
-            padding: 12px 20px;
+            padding: 12px;
             font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 25px;
-            width: 300px;
-            background-color: #444;
+            border: 1px solid #444;
+            width: 320px;
+            border-radius: 8px;
+            background-color: #222;
             color: white;
         }
         
         .search-container input[type="submit"] {
             padding: 12px 20px;
-            background-color: #777;
+            background-color: #444;
             color: white;
             border: none;
-            border-radius: 25px;
+            border-radius: 8px;
             cursor: pointer;
             margin-left: 10px;
             transition: background-color 0.3s;
@@ -76,19 +78,25 @@
         
         .products {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             flex-wrap: wrap;
-            margin-top: 40px;
+            margin-top: 30px;
+            margin-left: 220px;
         }
         
         .product {
-            background-color: #444;
+            background-color: #1e1e1e;
             padding: 20px;
-            border-radius: 8px;
             margin: 15px;
             text-align: center;
             width: 250px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .product:hover {
+            transform: translateY(-5px);
         }
         
         .product img {
@@ -97,32 +105,21 @@
             border-radius: 8px;
         }
         
-        .product h3 {
-            font-size: 20px;
+        .product a {
+            font-size: 16px;
+            color: #ffffff;
             margin-top: 10px;
+            display: block;
         }
         
         .product p {
-            font-size: 16px;
-            color: #bbb;
+            font-size: 14px;
+            color: #bbbbbb;
+            margin-top: 10px;
         }
         
-        .content {
-            max-width: 1200px;
-            margin: 30px auto;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        .content h2 {
-            font-size: 28px;
-            color: #fff;
-            margin-bottom: 30px;
-        }
-        
-        .content p {
-            font-size: 18px;
-            color: #bbb;
+        .product del {
+            color: #888;
         }
     </style>
 </head>
@@ -135,19 +132,19 @@
 
     <div class="search-container">
         <form action="#" method="get">
-            <input type="text" name="search" placeholder="search products" required>
-            <input type="submit" value="חפש">
+            <input type="text" name="search" placeholder="Search Products" required>
+            <input type="submit" value="Search">
         </form>
     </div>
 
-    <div class="products">
+    <div class="products ">
         <div class="product">
-            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5a405c21c45e48299e80fa82fff25987G.jpeg_220x220q75.jpeg_.avif">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S5a405c21c45e48299e80fa82fff25987G.jpeg_220x220q75.jpeg_.avif ">
             <a href="https://he.aliexpress.com/item/1005007343958003.html?spm=a2g0o.productlist.main.4.44dby7mYy7mYhJ&pdp_ext_f=%7B%22sku_id%22%3A%2212000040349226780%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3Acategory_navigate">Portable Fascia Fistula <del>₪164.68</del> ₪16.62</a>
             <p>Portable Fascia Fistula with Vibration for Massage for Body, Neck, Back, Deep Muscles, Relaxation, Fitness, Slimming, One Head</p>
         </div>
         <div class="product">
-            <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sc6c2263be6704e72ac3cff809f26e745y.jpg_220x220q75.jpg_.avif">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sc6c2263be6704e72ac3cff809f26e745y.jpg_220x220q75.jpg_.avif ">
             <a href="https://he.aliexpress.com/item/1005006645520964.html?spm=a2g0o.productlist.main.21.6f22674402OZd8&pdp_ext_f=%7B%22sku_id%22%3A%2212000037912597407%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3Acategory_navigate">Warm and soft cat pet mattress <del>₪101.27</del> ₪3.65</a>
             <p>Warm and soft pet mattress cat bed with cover, round cat bed for small dogs and cats</p>
         </div>
@@ -170,6 +167,32 @@
             <img src="https://ae-pic-a1.aliexpress-media.com/kf/Se35b0a1290094a278da6ea5652d1897cL.jpg_220x220q75.jpg_.avif">
             <a href="https://he.aliexpress.com/item/1005004963661885.html?spm=a2g0o.productlist.main.8.ca021fcf7d4Sy5&pdp_ext_f=%7B%22sku_id%22%3A%2212000031174347263%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3Acategory_navigate">Titanium Steel Rotating Chain Ring for Women and Men <del>₪2.46</del> ₪0.62</a>
             <p>Titanium Steel Rotating Chain Ring for Women and Men, Stress Relief Spinner Ring, Multi-purpose Chain Ring for Bottle Opener, Gift</p>
+        </div>
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S748760b2ae7440f7a20e103110e1950a0.jpg_220x220q75.jpg_.avif">
+            <a href="https://he.aliexpress.com/item/1005002333655914.html?spm=sbuds.findproducts.0.0.5f43847eFdpqHE&gatewayAdapt=glo2isr">Animal Shaped Dog Toy <del>₪13.56</del> ₪3.67</a>
+            <p>Animal Shaped Dog Toy, Bite Resistant and Dense Corduroy Fabric Toys for Small and Large Dogs, Puppies and Pets - Training Accessories</p>
+            </p>
+        </div>
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S92e140b4d52b4330963ecd87f4c923c6Y.jpg_220x220q75.jpg_.avif">
+            <a href="https://he.aliexpress.com/item/1005007070676365.html?spm=sbuds.findproducts.0.0.4fdc847eSbrIeH&gatewayAdapt=glo2isr">Teaser stick cat toy with bell <del>₪9.09</del> ₪3.67</a>
+            <p>Cat Toy Teaser Stick with Bell Extended Stick with Self-Absorbing Bracket High and Durable Bite Teaser Tool with Replaceable Feather Head</p>
+        </div>
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/Sf9566c254a794fe194afe259d4d58bb86.jpg_220x220q75.jpg_.avif">
+            <a href="https://he.aliexpress.com/item/1005007070676365.html?spm=sbuds.findproducts.0.0.4fdc847eSbrIeH&gatewayAdapt=glo2isr">inch waterproof smart watch with message <del>₪34.38</del> ₪3.67</a>
+            <p>1.83 inch waterproof smart watch with message, call answering, sleep tracking, sports, pedometer and notifications for iPhone and Android</p>
+        </div>
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/S3cb9f1c9ae3a4e2fb5c66b3edbfc4f08S.jpg_220x220q75.jpg_.avif">
+            <a href="https://he.aliexpress.com/item/1005006735686376.html?srcSns=sns_WhatsApp&spreadType=socialShare&bizType=ProductDetail&social_params=6000251205916&aff_fcid=2ef2c51556e94f2aa1539e3e0e9dcaac-1741180268712-06082-_oDcbxLO&tt=MG&aff_fsk=_oDcbxLO&aff_platform=default&sk=_oDcbxLO&aff_trace_key=2ef2c51556e94f2aa1539e3e0e9dcaac-1741180268712-06082-_oDcbxLO&shareId=6000251205916&businessType=ProductDetail&platform=AE&terminal_id=8622bbc36ee648b49055bfefb15f8256&afSmartRedirect=y&gatewayAdapt=glo2isr">Multi-program wireless charging station with RGB <del>₪70.40</del> ₪3.67</a>
+            <p>Cat Toy Teaser Stick with Bell Extended Stick with Self-Absorbing Bracket High and Durable Bite Teaser Tool with Replaceable Feather Head</p>
+        </div>
+        <div class="product">
+            <img src="https://ae-pic-a1.aliexpress-media.com/kf/Se8a368aa85434fcb80be6d3b282f3876X.png_220x220.png_.avif">
+            <a href="https://he.aliexpress.com/item/1005006904506588.html?srcSns=sns_WhatsApp&sourceType=570&spreadType=socialShare&bizType=ProductDetail&social_params=6000251211488&aff_fcid=3d454695f2c04a78b0ab096aaf47a92e-1741180403368-02798-_olJ3vLe&tt=MG&aff_fsk=_olJ3vLe&aff_platform=default&sk=_olJ3vLe&aff_trace_key=3d454695f2c04a78b0ab096aaf47a92e-1741180403368-02798-_olJ3vLe&shareId=6000251211488&businessType=ProductDetail&platform=AE&terminal_id=8622bbc36ee648b49055bfefb15f8256&afSmartRedirect=y&gatewayAdapt=glo2isr">Tws Earphones F9-5 Wireless Headphones <del>₪22.40</del> ₪2.45</a>
+            <p>Tws Earphones F9-5 Wireless Headphones Headsets Beautiful Stereo Sports Headphones Earphones Hearing Aids with Handheld Microphones</p>
         </div>
     </div>
 
